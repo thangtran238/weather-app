@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background-image: url(/p9/img/hot.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container #weather {
+  width: 350px;
+  border-radius: 10px;
+  padding: 30px 20px;
+  background-image: url(/p9/img/hot.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  visibility: visible;
+  opacity: 1;
+}
+.container .search {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0 15px 0 15px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+  font-size: 19px;
+}
+.container .search:focus {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 15px 0 15px 0;
+}
+.container .content {
+  text-align: center;
+  color: white;
+  margin: 40px 0;
+  transition: 0.4s;
+}
+.container .content .place {
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.container .time {
+  margin: 15px 0 20px 0;
+  font-size: 15px;
+}
+.container .temperature {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px 10px;
+  font-size: 65px;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  margin: 0 30px;
+  border: none;
+  outline: none;
+}
+.container .short-desc {
+  font-size: 40px;
+  margin: 20px 0;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+}
+.container .detail-desc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .detail-desc div {
+  display: flex;
+  flex-direction: column;
+}
+.container .detail-desc div i {
+  margin: 20px 0;
+}
+
+.hider {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hot {
+  background-image: url(/p9/img/hot.jpg);
+}
+
+.cold {
+  background-image: url(/p9/img/cold.jpg);
+}
+
+.cool {
+  background-image: url(/p9/img/cool.jpeg);
+}
+
+.warm {
+  background-image: url(/p9/img/warm.jpg);
+}
+
+.hot #weather {
+  background-image: url(/p9/img/hot.jpg);
+}
+
+.cold #weather {
+  background-image: url(/p9/img/cold.jpg);
+}
+
+.warm #weather {
+  background-image: url(/p9/img/warm.jpg);
+}
+
+.cool #weather {
+  background-image: url(/p9/img/cool.jpeg);
+}
+
+/*# sourceMappingURL=style.css.map */
